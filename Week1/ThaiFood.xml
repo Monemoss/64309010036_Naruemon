@@ -4,6 +4,53 @@
         <Foodname>ข้าวผัดปู</Foodname>
         <price>50 บาท</price>
     </ThaiFood>
+    <ThaiFood>
+        <FoodID>002</FoodID>
+        <Foodname>ไข่เจียว</Foodname>
+        <price>30 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>003</FoodID>
+        <Foodname>ก๋วยเตี๋ยว</Foodname>
+        <price>50 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>004</FoodID>
+        <Foodname>สเต็กไก่พริกไทยดำ</Foodname>
+        <price>69 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>005</FoodID>
+        <Foodname>สเต็กอกไก่</Foodname>
+        <price>69 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>006</FoodID>
+        <Foodname>สเต็กเนื้อโคขุน</Foodname>
+        <price>129 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>007</FoodID>
+        <Foodname>เฟรนฟราย</Foodname>
+        <price>59 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>008</FoodID>
+        <Foodname>นักเก็ท</Foodname>
+        <price>59 บาท</price>
+    </ThaiFood>
+    <ThaiFood>
+        <FoodID>009</FoodID>
+        <Foodname>ไข่กระทะ</Foodname>
+        <price>40 บาท</price>
+    </ThaiFood>
+        <ThaiFood>
+        <FoodID>010</FoodID>
+        <Foodname>ข้าวมันไก่</Foodname>
+        <price>50 บาท</price>
+    </ThaiFood>
+
+
 
 
 </Food>
