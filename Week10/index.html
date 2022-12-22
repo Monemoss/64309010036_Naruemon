@@ -25,16 +25,31 @@
 
             let obj = JSON.parse(this.responseText);
 
-            for(i=0;i<obj.length;i++){
-                temp += '<tr><td>'
-                + '<td>' + " ชื่อเรื่อง " +obj[i].movieName+'</td>'
-                + '<td>' + " เวลา " +obj[i].movieLength+'</td>'
-                + '<td>' + " ผู้กำกับ " +obj[i].director+'</td>'
-                + '<td>' + " แนวหนัง " +obj[i].category+'</td>'
-                + <'img src'=  width=20 +obj[i].picture+'</td>' ; 
+            for(i = 0; i < obj.length; i++) {  
+                temp += 
+                '<tr><br>' 
+                + "<b><h3> ชื่อเรื่อง </b>" +obj[i].movieName +'</td><br>'
+                + " เวลา " +obj[i].movieLength +" นาที "+'</td>'
+                + " ผู้กำกับ " +obj[i].director +'</td><br>'
+                + " แนวหนัง " +obj[i].category +'</td><br>'
+                +'<img width=450 src='+obj[i].picture+'><br>'
+                +'iframe width= 420 height= 345 src='+obj[i].trailer+'></iframe>'
+
+
+                //+ '<img  width=20 src='> +obj[i].picture+'> +';
+                //+'<iframe src="' +  +obj[i].trailer + '"></iframe>'+'</tr>'
+                //+ '<img  width=20 src='> +obj[i].picture+'>+'<br>;
+
+
+                //temp += '<tr>'+
+                  '<td>'+
+                  '<img src='+obj[i].picture+'>'+
+                '</td><br>'+
+                '</tr>'
+                
 
             }
-            document.getElementById('display').innerHTML = '<table class="table">'+temp+'<table>';
+            document.getElementById('display').innerHTML = '<table class="table">'+temp+'</table>';
         }
 
     </script>
