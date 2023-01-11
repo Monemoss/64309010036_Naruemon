@@ -1,13 +1,30 @@
-let items ={
-    "A4paper":120,
-    "Ruler":25,
-    "FlashDrive":130
+let order =[{
+    "Customer" : "Mr.Lee",
+    "ItemOrder" : ["A4 paper" , "Ruler"],
+    "Qty" : [5,2],
+    "Price" : [120 , 25],
+
+},
+{
+    "Customer" : "Mr.Yue",
+    "ItemOrder" : ["Flash Drive" , "A4 paper"],
+    "Qty" : [2,3],
+    "Price" : [130 , 120],
+
+},
+{
+    "Customer" : "Mr.Mone",
+    "ItemOrder" : ["Flash Drive" , "A4 paper" , "Ruler"],
+    "Qty" : [5,2,3],
+    "Price" : [120 , 25 , 120],
+
 }
-//Mr. Lee
-console.log("Mr. Lee",items.A4paper*5 +items.Ruler*2)
-
-//Mr. Yue
-console.log("Mr. Yue",items.FlashDrive*2 +items.A4paper*3)
-
-//Ms. Mone
-console.log("Ms.Mone ",items.FlashDrive*2 +items.A4paper*3+items.Ruler*2)
+];
+//console.log(order[0].Customer.ItemOrder);
+for (let i = 0;i < order.length; i++) {
+    let sum=0;
+    for(let j = 0; j <order[i].ItemOrder.length; j++){
+        sum += order[i].Qty[j] * order[i].Price[j];
+    }
+    console.log(order[i].Customer, sum);
+}
